@@ -6,13 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="32dp"
+    android:background="#FFF9C4"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:scaleType="centerInside"
+        android:src="@drawable/rt_radient_logo"
+      />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="34sp"
+        android:text="LogIn"
+        android:textColor="#FFEBEE"
+        android:background="#F44336"
+        />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textAlignment="center"
+        android:textSize="33sp"
+        android:background="#AEEA00"
+        android:onClick="openAbout"/>
+    <TextView
+        android:id="@+id/gal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:text="Gallery"
+        android:textAlignment="center"
+        android:onClick="openGallery"
+        android:background="#FF6E40"/>
+    <TextView
+        android:id="@+id/cont"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="33sp"
+        android:text="Contact Us"
+        android:textAlignment="center"
+        android:onClick="contact"
+        android:background="#FFC107"/>
+   </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
